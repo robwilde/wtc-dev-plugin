@@ -10,9 +10,10 @@ add_shortcode('twc-code', function() {
     return 'here is the plugin stuff';
 });
 
-function pretty_printr($variable){
+function pretty_printr($variable, $title = ''){
 
     echo '<code><pre>';
+    echo '<strong>'. $title .' : </strong>';
     print_r($variable);
     echo '</pre></code>';
 
